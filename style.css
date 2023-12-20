@@ -1,0 +1,245 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    outline: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+    height: 100vh;
+    background-image: url("BG christmas.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif; /* เพิ่ม font-family เพื่อทำให้ตัวอักษรดูดี */
+}
+
+/* .navbar-2 .logo {
+    margin-right: 1rem;
+} */
+
+.mainbox{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin-top: 50px;
+    right: 70px;
+    left: 30px;
+}
+.mainbox-after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    transform: rotate(90deg);
+    background: url(arrow.png) no-repeat;
+    background-size: 5%;
+    left: 5%;
+    top: 48%;
+    transform: rotate(90deg);
+}
+.box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 50%;
+    /* border:10px solid whitesmoke; */
+    overflow: hidden;
+    transition: all ease-in-out 5s;
+    /* transform: rotate(90deg); */
+    transform: rotate(360deg);
+}
+span{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    transform: rotate(45deg);
+}
+.span1{
+    clip-path: polygon(0 17%, 0 50%, 50% 50%);
+    background-color: #56f5a5;
+    color: #000;
+}
+.span2{
+    clip-path: polygon(0 17%, 30% 0, 50% 50%);
+    background-color: #e95c63;
+    color: #000;
+}
+.span3{
+    clip-path: polygon(30% 0, 71% 0% , 50% 50%);
+    background-color: #50faa5;
+    color: #000;
+}
+.span4{
+    clip-path: polygon(71% 0, 100% 18% , 50% 50%);
+    background-color: #e9babc;
+    color: #000;
+}
+.span5{
+    clip-path: polygon(100% 18%, 100% 50% , 50% 50%);
+    background-color: #60d199;
+    color: #000;
+}
+.box2 .span3 {
+    background-color: #e69599;
+}
+.box2{
+    width: 100%;
+    height: 100%;
+    transform: rotate(180deg);
+}
+.box2 .span1{
+    background-color: #51c088;
+}
+.font{
+    color: #000000;
+    font-size: 20px;
+}
+.box1 .span1 h5{
+    position: absolute;
+    top: 40%;
+    right: 84%;
+    transform: rotate(195deg);
+    text-align: center;
+}
+.box1 .span2 h5{
+    position: absolute;
+    top: 18%;
+    right: 71%;
+    transform: rotate(-120deg);
+    text-align: center;
+}
+.box1 .span3 h5{
+    position: absolute;
+    top: 13%;
+    right: 42%;
+    transform: rotate(-89deg);
+    text-align: center;
+}
+.box1 .span4 h5{
+    position: absolute;
+    top: 16%;
+    right: 22%;
+    transform: rotate(-50deg);
+    text-align: center;
+}
+.box1 .span5 h5{
+    position: absolute;
+    top: 37%;
+    right: 6%;
+    transform: rotate(-15deg);
+    text-align: center;
+}
+.box2 .span1 h5{
+    /* font-size: 50px; */
+    position: absolute;
+    top: 34%;
+    right: 70%;
+    transform: rotate(200deg);
+    text-align: center;
+}
+.box2 .span2 h5{
+    /* font-size: 50px; */
+    position: absolute;
+    top: 19%;
+    right: 65%;
+    transform: rotate(-125deg);
+    text-align: center;
+}
+.box2 .span3 h5{
+    /* font-size: 50px; */
+    position: absolute;
+    top: 12%;
+    right: 41%;
+    transform: rotate(270deg);
+    text-align: center;
+}
+.box2 .span4 h5{
+    /* font-size: 50px; */
+    position: absolute;
+    top: 19%;
+    right: 18%;
+    transform: rotate(310deg);
+    text-align: center;
+}
+.box2 .span5 h5{
+    /* font-size: 50px; */
+    position: absolute;
+    top: 38%;
+    right: 6%;
+    transform: rotate(-20deg);
+    text-align: center;
+}
+.spin{
+    position: inherit;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background:salmon;
+    color: #000;
+    box-shadow: 0 5px 20px #000;
+    font-weight: bold;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 1000;
+}
+.spin:active{
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
+}
+ /* content */
+ .main-content{
+    top: 50px;
+    position: relative;
+    width: 100%;
+    max-width: 809px;
+    left: 100px;
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+    margin-right: 200px;
+    margin-top: 0.8rem;
+    margin-bottom: 10rem;
+    padding-bottom: 10rem;
+    border-radius: 15px;
+    background: #fff;
+ }
+ .main-content>p{
+    color: #000000;
+    font-size: calc(18px + 0.5w);
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    padding-top: 1.1rem;
+ }
+
+
+/* HEADER */
+/* .logo {
+    margin-right: 1rem;
+    max-width: 10%;
+    max-height: 10%;
+} */
+
+main {
+    position: relative;
+    padding: 0 2rem;
+}
+
+textarea{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 355px;
+    height: 350px;
+    margin: 5em;
+    border-width: 1px;
+}
